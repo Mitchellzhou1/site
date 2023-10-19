@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 .profile {
-    background-image: url('portrait.jpeg');
+    background-image: url('images/portrait.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
