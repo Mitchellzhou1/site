@@ -1,0 +1,392 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 30px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+nav a {
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 30px 25px;
+    transition: background-color 0.0s;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.bio {
+    width: 60%;
+    padding: 10pc;
+    padding-top: 60px;
+    margin-top: 90px;
+}
+
+.bio h1 {
+    font-size: 9rem;
+    color: #000;
+    font-family: 'Noto Color Emoji', 'Kanit';
+    margin: 0px 0;
+    height: 180px;
+}
+
+.bio h2 {
+    font-size: 5rem;
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.bio p {
+    font-size: 1.5rem;
+    color: #000;
+    font-family: 'Kanit';
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+.profile {
+    background-image: url('portrait.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 96vh;
+    width: 50%;
+    margin-top: 60px;
+}
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 48%;
+}
+
+.info {
+    width: 70%;
+    padding: 1pc;
+    padding-left: 10pc;
+    padding-right: 0pc;
+    padding-top: 30px;
+}
+
+.info h3 {
+    font-size: 4rem;
+    color: #000;
+    font-family: 'Kanit';
+    margin: 0px 0;
+    height: 80px;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.info h2 {
+    font-size: 6rem;
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    height: 120px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.info h4 {
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Kanit';
+    margin: 0px;
+    height: 70px;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.info small {
+    font-size: 1.5rem;
+    color: #000;
+    font-family: 'Kanit';
+    margin: 0px;
+    height: 70px;
+    line-height: 1.2;
+}
+
+.info p {
+    font-size: 1.5rem;
+    color: #000;
+    font-family: 'Kanit';
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.info desc {
+    font-size: 1.3rem;
+    color: #000;
+    font-family: sans-serif;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.custom-link {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.custom-link:hover {
+    color: #FFF !important;
+    background-color: #702963;
+}
+
+.custom-linkblue {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.custom-linkblue:hover {
+    color: #FFF !important;
+    background-color: #00739c;
+}
+
+.expand-on-hover {
+    transition: transform 0.3s;
+    width: 35%;
+    height: 35%;
+    left: 35%
+}
+
+.expand-on-hover:hover {
+    transform: scale(1.2);
+}
+
+.datetime {
+    font-size: 20px;
+    color: #00739c;
+}
+
+.h4:hover {
+    color: #FFFFFF;
+    background-color: #8200be;
+}
+
+.arrow_div {
+    position: fixed;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+@keyframes bouncing {
+    0% { top: 60pc; }
+    50% { top: 63pc; }
+    100% { top: 60pc; }
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 26vw;
+}
+
+table {
+    border: none;
+}
+
+table td {
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 15px;
+    padding: 0;
+}
+
+li {
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.divider {
+    font-family: 'Kanit', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.divider h2 {
+    font-size: 7em;
+    margin: 0;
+}
+
+.divider p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+pre {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+wave {
+    font-size: 6rem;
+    height: 40px;
+    vertical-align: 0.16em;
+}
+
+red {
+    color: #c90101;
+    font-weight: bold;
+}
+
+blue {
+    color: #00739c;
+    font-weight: bold;
+}
+
+green {
+    color: #007325;
+    font-weight: bold;
+}
+
+.black {
+    color: #000000;
+    font-weight: bold;
+}
+
+.black:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: bold;
+}
+
+.spoofing {
+    background-image: url('emailSpoofer.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 50%;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#flagInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00739c;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+}
+#submitButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #00739c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultMessage {
+    font-size: 20px;
+}
+
+#confetti {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+hint {
+    font-size: 18px;
+    color: #fff;
+}
+
+hint:hover {
+    background-color: #000000;
+    font-weight: bold;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mitchell's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="background.html">Background</a>
+            <a href="#" style="background-color: white; color: black;">CTFs</a>
+            <a href="#">Projects</a>
+            <a href="#">Research</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="divider" style="padding-top: 100px;">
+        <h2>Capture The Flag</h2>
+        <p>Now lets talk about CTFs</p>
+    </div>
+
+    <div class="section" style="margin-bottom: 3%;">
+        <div class="info">
+            <h3 style="height: 60px;">What are CTFs?</h3>
+            <small>
+                <pre style="font-family: Kanit; line-height: 140%; margin-top: 15px;">
+CTF competitions typically feature a range of cybersecurity challenges,
+including cryptanalysis, binary exploitation, web exploitation, and
+forensics. These challenges often involve solving puzzles, finding
+vulnerabilities in software, analyzing network traffic, or decrypting
+hidden messages. Participants must apply their technical skills and
+problem-solving abilities to overcome these hurdles and capture
+"flags" to earn points. <a href="https://dev.to/atan/what-is-ctf-and-how-to-get-started-3f04" style="color: #8B0000;text-decoration: none; font-weight:bold;">Learn more</a>
+
+Can you find the flag on my page?🤭</pre>
+            </small>
+            <input type="text" id="flagInput" placeholder="Enter flag here">
+            <button id="submitButton" onclick="checkFlag()">Submit</button>
+            <p id="resultMessage" style="font-size: 18px;">Hint1-><hint> right click and click inspect element&nbsp;</hint></p>
+
+            <img id="confetti" src="images/confetti.gif" alt="Confetti">
+            <!--                                         -->
+            <!--                  Hint 2!                -->
+            <!--         Open the script tag below       -->
+            <!--                                         -->
+
+            <script>
+                function checkFlag() {
+                    var flagInput = document.getElementById("flagInput").value;
+                    var resultMessage = document.getElementById("resultMessage");
+<!--                                                             -->
+<!--                                      Hint 3!                -->
+<!--                             Open the Flag is below : )      -->
+<!--                                                             -->
+                    if (flagInput === "flag{this_is_how_you_play_CTF}") {
+                        resultMessage.style.color = "green";
+                        resultMessage.textContent = "Flag is correct! You solved the CTF challenge.";
+                        startConfetti();
+                    } else {
+                        resultMessage.style.color = "red";
+                        resultMessage.textContent = "Incorrect flag. Try again.";
+                    }
+                }
+
+                function startConfetti() {
+                    const confetti = document.getElementById('confetti');
+                    confetti.style.display = 'block';
+
+                    setTimeout(() => {
+                        confetti.style.display = 'none';
+                    }, 6000);
+                }
+            </script>
+
+        </div>
+    <img src="images/CTF.gif" class="expand-on-hover" style="width: 20%; height: 10%; position: relative; left: -10%; margin-top: 2%;">
+    </div>
+
+
+    <div class="section" style="margin-bottom: 10%;">
+        <div class="info" style="padding-top: 0%;">
+            <h3 style="height: 60px;">NYU OSIRIS Cyber Security Lab</h3>
+
+            <desc style="font-family: Kanit; font-size: 1.5rem;">Description:</desc>
+<desc style="font-family: Kanit; font-size: 1.5rem;">
+                <pre style="font-family: Kanit; line-height: 140%; margin-top: 15px;">
+The Offensive Security, Incident Response, and Internet Security (OSIRIS) Lab is a
+student-run cybersecurity research lab and club at New York University. We are a
+part of the University's Center for Cyber Security. Our Capture The Flag team NYUSEC
+competes in cyber security competitions every weekend.
+
+I am an active competition member and CTF developer for the club. Here is a list of
+challenges I've developed:</pre>
+            </desc>
+            <div class="info-container">
+                <table style="width: 70vh;">
+                    <tr>
+                        <td style="padding-right: 50px; padding-left: 10px;">
+                            <ul>
+                                <li onmouseover="this.style.backgroundColor='#702963';" onmouseout="this.style.backgroundColor='transparent';" ><a href="https://github.com/Mitchellzhou1/MTA-Prices">MTA Prices</a></li>
+                                <li onmouseover="this.style.backgroundColor='#702963';" onmouseout="this.style.backgroundColor='transparent';" ><a href="https://github.com/osirislab/CSAW-CTF-2023-Quals/tree/main/web/smug-dino">smug-dino</a></li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li onmouseover="this.style.backgroundColor='#702963';" onmouseout="this.style.backgroundColor='transparent';" ><a href="https://github.com/Mitchellzhou1/Gambling-CTF">Gambling-CTF</a></li>
+                                <li onmouseover="this.style.backgroundColor='#702963';" onmouseout="this.style.backgroundColor='transparent';" ><a href="CTF.html">This website🤭</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/OsirisLab.jpg" class="expand-on-hover" style="position: relative; relative; left: 30%; margin-top: -30%; width: 50%; length: 60%;">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
