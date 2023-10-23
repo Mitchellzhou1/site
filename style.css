@@ -426,5 +426,13 @@ hint:hover {
     font-size: 20px;
 }
 
+.icon-container {
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.icon-container:hover {
+    transform: scale(1.4);
+}
 
 
