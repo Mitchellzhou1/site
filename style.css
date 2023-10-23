@@ -47,13 +47,14 @@ nav a:hover {
 
 .bio {
     width: 60%;
-    padding: 10pc;
+    padding: 8.07%;
     padding-top: 60px;
+    padding-bottom: 0px;
     margin-top: 90px;
 }
 
 .bio h1 {
-    font-size: 9rem;
+    font-size: 9vw;
     color: #000;
     font-family: 'Noto Color Emoji', 'Kanit';
     margin: 0px 0;
@@ -61,7 +62,7 @@ nav a:hover {
 }
 
 .bio h2 {
-    font-size: 5rem;
+    font-size: 4vw;
     color: #000;
     font-family: 'Kanit', sans-serif;
     margin: 0px;
@@ -69,7 +70,7 @@ nav a:hover {
 }
 
 .bio p {
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     color: #000;
     font-family: 'Kanit';
     text-align: left;
@@ -83,15 +84,15 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     height: 96vh;
-    width: 50%;
-    margin-top: 60px;
+    width: 80vh;
+    margin-top: 8vh;
 }
 
 .section {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 5vh;
 }
 
 .info-container {
@@ -107,12 +108,12 @@ nav a:hover {
     width: 70%;
     padding: 1pc;
     padding-left: 10pc;
-    padding-right: 0pc;
+    padding-right: 1vw;
     padding-top: 30px;
 }
 
 .info h3 {
-    font-size: 4rem;
+    font-size: 3.5vw;
     color: #000;
     font-family: 'Kanit';
     margin: 0px 0;
@@ -122,17 +123,17 @@ nav a:hover {
 }
 
 .info h2 {
-    font-size: 6rem;
+    font-size: 6vw;
     color: #000;
     font-family: 'Kanit', sans-serif;
     margin: 0px;
     height: 120px;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 2vh;
 }
 
 .info h4 {
-    font-size: 3rem;
+    font-size: 3vw;
     color: #000;
     font-family: 'Kanit';
     margin: 0px;
@@ -142,7 +143,7 @@ nav a:hover {
 }
 
 .info small {
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     color: #000;
     font-family: 'Kanit';
     margin: 0px;
@@ -151,7 +152,7 @@ nav a:hover {
 }
 
 .info p {
-    font-size: 1.5rem;
+    font-size: 1.5vh;
     color: #000;
     font-family: 'Kanit';
     text-align: left;
@@ -160,7 +161,7 @@ nav a:hover {
 }
 
 .info desc {
-    font-size: 1.3rem;
+    font-size: 1.2vw;
     color: #000;
     font-family: sans-serif;
     text-align: left;
@@ -214,25 +215,28 @@ nav a:hover {
     background-color: #8200be;
 }
 
-.arrow_div {
-    position: fixed;
-    transform: translateX(-50%);
-    z-index: 999;
-}
-
-@keyframes bouncing {
+/*@keyframes bouncing {
     0% { top: 60pc; }
     50% { top: 63pc; }
     100% { top: 60pc; }
+}*/
+
+/* Using Transform to just visually offset the element */
+@keyframes bouncing {
+    0% { transform: translateY(1em); }
+    50% { transform: translateY(-1em); }
+    100% { transform: translateY(1em);}
+}
+
+.arrow-container {
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .arrow {
-    animation: bouncing 1s infinite ease-in-out;
-    display: block;
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    left: 26vw;
+    animation: bouncing 1s infinite ease-in-out alternate;
+    width: 2.5vw;
+    height: 3.9vh;
 }
 
 table {
@@ -250,7 +254,7 @@ ul {
 }
 
 li {
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     font-family: 'Kanit', sans-serif;
     margin-bottom: 10px;
 }
@@ -275,7 +279,7 @@ ul li a:hover {
 }
 
 .divider h2 {
-    font-size: 7em;
+    font-size: 8vw;
     margin: 0;
 }
 
@@ -295,14 +299,14 @@ ul li a:hover {
 
 pre {
     font-family: Arial, sans-serif;
-    font-size: 20px;
-    margin-top: 15px;
+    font-size: 1.2vw;
+    margin-top: 1.2 vh;
     margin-bottom: 0px;
 }
 
 wave {
-    font-size: 6rem;
-    height: 40px;
+    font-size: 6vh;
+    height: 0px;
     vertical-align: 0.16em;
 }
 
@@ -349,7 +353,7 @@ green {
     height: 100vh;
     flex-direction: column;
 }
-#flagInput {
+#flagInput1 {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #00739c;
@@ -357,7 +361,7 @@ green {
     outline: none;
     width: 350px;
 }
-#submitButton {
+#submitButton1 {
     padding: 12px 20px;
     font-size: 16px;
     background-color: #00739c;
@@ -366,11 +370,11 @@ green {
     border-radius: 5px;
     cursor: pointer;
 }
-#resultMessage {
+#resultMessage1 {
     font-size: 20px;
 }
 
-#confetti {
+#confetti1 {
     display: none;
     position: fixed;
     top: 0;
@@ -389,4 +393,38 @@ hint:hover {
     background-color: #000000;
     font-weight: bold;
 }
+
+#confetti2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+
+#flagInput2 {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00739c;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+}
+#submitButton2 {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #00739c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultMessage2 {
+    font-size: 20px;
+}
+
+
 

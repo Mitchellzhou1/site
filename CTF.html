@@ -31,7 +31,7 @@
         <div class="info">
             <h3 style="height: 60px;">What are CTFs?</h3>
             <small>
-                <pre style="font-family: Kanit; line-height: 140%; margin-top: 15px;">
+                <pre style="font-family: Kanit; line-height: 140%; margin-top: 15px; bold; font-size: 1.2vw;">
 CTF competitions typically feature a range of cybersecurity challenges,
 including cryptanalysis, binary exploitation, web exploitation, and
 forensics. These challenges often involve solving puzzles, finding
@@ -40,29 +40,21 @@ hidden messages. Participants must apply their technical skills and
 problem-solving abilities to overcome these hurdles and capture
 "flags" to earn points. <a href="https://dev.to/atan/what-is-ctf-and-how-to-get-started-3f04" style="color: #8B0000;text-decoration: none; font-weight:bold;">Learn more</a>
 
-Can you find the flag on my page?🕵</pre>
+Can you find the flags on my page?🕵
+<b>Level 1:</b>                </pre>
             </small>
-            <input type="text" id="flagInput" placeholder="Enter flag here">
-            <button id="submitButton" onclick="checkFlag()">Submit</button>
-            <p id="resultMessage" style="font-size: 18px;">Hint1-><hint> right click and click inspect element&nbsp;</hint></p>
+            <input type="text" id="flagInput1" placeholder="Enter flag here">
+            <button id="submitButton1" onclick="checkFlag1()">Submit</button>
+            <p id="resultMessage1" style="font-size: 18px;">Hint1-><hint> the flag = flag{this is the flag}</hint></p>
 
-            <img id="confetti" src="images/confetti.gif" alt="Confetti">
-            <!--                                         -->
-            <!--                  Hint 2!                -->
-            <!--         Open the script tag below       -->
-            <!--                                         -->
-
+            <img id="confetti1" src="images/confetti.gif" alt="Confetti">
             <script>
-                function checkFlag() {
-                    var flagInput = document.getElementById("flagInput").value;
-                    var resultMessage = document.getElementById("resultMessage");
-<!--                                                             -->
-<!--                                      Hint 3!                -->
-<!--                                the Flag is below : )        -->
-<!--                                                             -->
-                    if (flagInput === "flag{this_is_how_you_play_CTF}") {
+                function checkFlag1() {
+                    var flagInput = document.getElementById("flagInput1").value;
+                    var resultMessage = document.getElementById("resultMessage1");
+                    if (flagInput === "flag{this is the flag}") {
                         resultMessage.style.color = "green";
-                        resultMessage.textContent = "Flag is correct! You solved the CTF challenge.";
+                        resultMessage.textContent = "Flag is correct! You solved the first challenge.";
                         startConfetti();
                     } else {
                         resultMessage.style.color = "red";
@@ -71,7 +63,7 @@ Can you find the flag on my page?🕵</pre>
                 }
 
                 function startConfetti() {
-                    const confetti = document.getElementById('confetti');
+                    const confetti = document.getElementById('confetti1');
                     confetti.style.display = 'block';
 
                     setTimeout(() => {
@@ -80,20 +72,64 @@ Can you find the flag on my page?🕵</pre>
                 }
             </script>
 
+            <pre style="font-family: Kanit; line-height: 60%; margin-top: 15px; font-size: 1.2vw; font-weight: bold;">
+Level 2:
+            </pre>
+            <input type="text" id="flagInput2" placeholder="Enter flag here">
+            <button id="submitButton2" onclick="checkFlag()">Submit</button>
+            <p id="resultMessage2" style="font-size: 18px;">Hint2-><hint> right click and click inspect element&nbsp;</hint></p>
+
+            <img id="confetti2" src="images/confetti.gif" alt="Confetti">
+            <!--                                         -->
+            <!--                  Hint 2!                -->
+            <!--         Open the script tag below       -->
+            <!--                                         -->
+
+            <script>
+                function checkFlag() {
+                    var flagInput = document.getElementById("flagInput2").value;
+                    var resultMessage = document.getElementById("resultMessage2");
+<!--                                                             -->
+<!--                                      Hint 3!                -->
+<!--                                the Flag is below : )        -->
+<!--                                                             -->
+                    if (flagInput === "flag{these_weren't_too_bad_right?}") {
+                        resultMessage.style.color = "green";
+                        resultMessage.textContent = "Flag is correct! You solved the second challenge.";
+                        startConfetti();
+                    } else {
+                        resultMessage.style.color = "red";
+                        resultMessage.textContent = "Incorrect flag. Try again.";
+                    }
+                }
+
+                function startConfetti() {
+                    const confetti = document.getElementById('confetti2');
+                    confetti.style.display = 'block';
+
+                    setTimeout(() => {
+                        confetti.style.display = 'none';
+                    }, 6000);
+                }
+            </script>
+
+
+
         </div>
-    <img src="images/CTF.gif" class="expand-on-hover" style="width: 20%; height: 10%; position: relative; left: -10%; margin-top: 2%;">
+    <img src="images/CTF.gif" class="expand-on-hover" style="width: 20%; height: 10%; position: relative; left: -10%; margin-top: 6%;">
     </div>
 
 
     <div class="section" style="margin-bottom: 3%;">
         <div class="info">
-            <h3 style="height: 60px;">NYU OSIRIS Cyber Security Lab</h3>
+            <h3 style="height: 5vh;">NYU OSIRIS Cyber Security Lab</h3>
             <small>
                 <pre>
+
                 </pre>
             </small>
 
-            <desc style="font-family: Kanit; font-size: 1.5rem;">Description:</desc>
+            <desc style="font-family: Kanit; font-size: 1.2vw;">Description:</desc>
             <div class="info-container" style="width: 40vw;">
                 <desc style="font-family: Kanit;">
                     The Offensive Security, Incident Response, and Internet Security (OSIRIS) Lab
@@ -126,20 +162,11 @@ Can you find the flag on my page?🕵</pre>
                         </td>
                     </tr>
                 </table>
-                <img src="images/OsirisLab.jpg" class="expand-on-hover" style="position: relative; relative; left: 30%; margin-top: -30%; width: 50%; length: 60%;">
+                <img src="images/OsirisLab.jpg" class="expand-on-hover" style="position: relative; relative; left: 35%; margin-top: -25%; width: 50%; length: 60%;">
             </div>
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
 
 
 
