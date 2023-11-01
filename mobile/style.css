@@ -1,3 +1,31 @@
+.nyu-heading {
+  height: 5vw;
+}
+
+.osiris {
+  height: 5vh;
+}
+
+.ctftext {
+    font-family: Kanit; line-height: 140%; margin-top: 15px; bold; font-size: 1.2vw;
+}
+
+.level-text{
+    font-family: Kanit; line-height: 60%; margin-top: 15px; font-size: 1.2vw; font-weight: bold;
+}
+
+.description{
+    font-family: Kanit; font-size: 1.2vw;
+}
+
+.date {
+    font-family: Kanit; line-height: 140%; height: 5vh; font-weight:bold;
+}
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,26 +34,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-@media (max-width: 760px) {
-    nav a {
-        font-size: 16px;
-        padding: 15px 10px;
-    }
-
-    .bio h1 {
-        font-size: 20px;
-    }
-
-    .bio h2 {
-        font-size: 24px;
-    }
-
-    .bio p {
-        font-size: 14px;
-    }
-}
-
 
 header {
     background-color: #000;
@@ -41,15 +49,15 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    padding: 16px;
+    padding: 25px;
 }
 
 nav a {
     font-family: 'Kanit', sans-serif;
     color: #fff;
-    font-size: 80%;
+    font-size: 27px;
     text-decoration: none;
-    padding: 20px 3px;
+    padding: 30px 25px;
     transition: background-color 0.0s;
 }
 
@@ -66,22 +74,22 @@ nav a:hover {
 }
 
 .bio {
-    width: 170%;
+    width: 60%;
     padding: 8.07%;
     padding-top: 5vh;
     padding-bottom: 0px;
-    margin-top: 1vh;
+    margin-top: 10vh;
 }
 
 .bio h1 {
-    font-size: 250%;
+    font-size: 950%;
     color: #000;
     font-family: 'Noto Color Emoji', 'Kanit';
-    margin-bottom: 1vh;
+    margin: 0px 0;
 }
 
 .bio h2 {
-    font-size: 100%;
+    font-size: 400%;
     color: #000;
     font-family: 'Kanit', sans-serif;
     margin: 0px;
@@ -89,7 +97,7 @@ nav a:hover {
 }
 
 .bio p {
-    font-size: 60%;
+    font-size: 130%;
     color: #000;
     font-family: 'Kanit';
     text-align: left;
@@ -102,8 +110,9 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 96vh;
     width: 80vh;
+    margin-top: 8vh;
 }
 
 .section {
@@ -181,7 +190,6 @@ nav a:hover {
 .info desc {
     font-size: 1.2vw;
     color: #000;
-    font-family: sans-serif;
     text-align: left;
     margin-bottom: 0px;
 }
@@ -257,7 +265,7 @@ nav a:hover {
 }
 
 #bio-container, #profile-container {
-  height: 0vh;
+    height: autos;
 }
 
 table {
@@ -295,7 +303,7 @@ ul li a:hover {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0;
     width: 100%;
 }
 
@@ -305,9 +313,8 @@ ul li a:hover {
 }
 
 .divider p {
-    font-size: 100%;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    font-size: 2em;
+    margin: 0;
 }
 
 .column {
@@ -327,7 +334,7 @@ pre {
 }
 
 wave {
-    font-size: 6vh;
+    font-size: 70%;
     height: 0px;
     vertical-align: 0.16em;
 }
@@ -456,5 +463,214 @@ hint:hover {
 .icon-container:hover {
     transform: scale(1.4);
 }
+@media only screen and (max-width: 900px) {
+    header nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .intro {
+        text-align: center; /* Center the content */
+        width: 140%; /* Adjust the width for smaller screens */
+    }
+    wave {
+        font-size: 70%;
+        height: 0px;
+        vertical-align: 0.16em;
+    }
+    .bio {
+        padding: 20px;
+    }
+    .bio h1 {
+        font-size: 600%;
+    }
 
+    .bio h2 {
+        font-size: 300%;
+    }
+    .profile {
+        display: none; /* Example of hiding an element on smaller screens */
+    }
+    .arrow{
+        display: none;
+    }
+    .divider h2 {
+        font-size: 500%;
+    }
+    .divider p {
+        font-size: 150%;
+    }
+    .info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .profile {
+        display: none;
+    }
+    .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: block;
+        padding: 0 0;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 8vh;
+    }
+    .info h3 {
+        font-size: 250%;
+        height: 5vh;
+    }
+    .info desc{
+        font-size: 110%;
+    }
+
+
+}@media only screen and (max-width: 900px) {
+    header nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .intro {
+        text-align: center; /* Center the content */
+        width: 140%; /* Adjust the width for smaller screens */
+    }
+    wave {
+        font-size: 70%;
+        height: 0px;
+        vertical-align: 0.16em;
+    }
+    .bio {
+        padding: 20px;
+    }
+    .bio h1 {
+        font-size: 600%;
+    }
+
+    .bio h2 {
+        font-size: 300%;
+    }
+    .profile {
+        display: none; /* Example of hiding an element on smaller screens */
+    }
+    .arrow{
+        display: none;
+    }
+    .divider h2 {
+        font-size: 500%;
+    }
+    .divider p {
+        font-size: 150%;
+    }
+    .info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .profile {
+        display: none;
+    }
+    .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: block;
+        padding: 0 0;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 8vh;
+    }
+    .info h3 {
+        font-size: 250%;
+        height: 5vh;
+    }
+    .info desc{
+        font-size: 110%;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    header nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .intro {
+        text-align: center;
+        width: 140%;
+    }
+    wave {
+        font-size: 70%;
+        height: 0px;
+        vertical-align: 0.16em;
+    }
+    .bio {
+        padding: 20px;
+    }
+    .bio h1 {
+        font-size: 600%;
+    }
+
+    .bio h2 {
+        font-size: 300%;
+    }
+    .profile {
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .divider h2 {
+        font-size: 500%;
+    }
+    .divider p {
+        font-size: 150%;
+    }
+    .info img {
+        max-width: 100%;
+        height: auto;
+    }
+    .profile {
+        display: none;
+    }
+    .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        display: block;
+        padding: 0 0;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 8vh;
+    }
+    .info h3 {
+        font-size: 250%;
+        height: 5vh;
+    }
+    .info desc{
+        font-size: 110%;
+    }
+
+
+}
 

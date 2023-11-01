@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Mitchell's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +8,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @media only screen and (max-width: 900px) {
+            header nav a {
+                padding: 8px;
+                font-size: 14px;
+            }
+            .intro {
+                text-align: center; /* Center the content */
+                width: 140%; /* Adjust the width for smaller screens */
+            }
+            wave {
+                font-size: 70%;
+                height: 0px;
+                vertical-align: 0.16em;
+            }
+            .bio {
+                padding: 20px;
+            }
+            .bio h1 {
+                font-size: 600%;
+            }
 
+            .bio h2 {
+                font-size: 300%;
+            }
+            .profile {
+                display: none; /* Example of hiding an element on smaller screens */
+            }
+            .arrow{
+                display: none;
+            }
+            .divider h2 {
+                font-size: 500%;
+            }
+            .divider p {
+                font-size: 150%;
+            }
+            .info img {
+                max-width: 100%;
+                height: auto;
+            }
+            .profile {
+                display: none;
+            }
+            .section {
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .info {
+                display: block;
+                padding: 0;
+                text-align: center;
+                margin-top: 20px;
+                max-width: 70%;
+                margin: auto;
+                margin-bottom: 8vh;
+            }
+            .info h3 {
+                font-size: 250%;
+                height: 5vh;
+            }
+            .info desc{
+                font-size: 110%;
+            }
+
+
+        }
+    </style>
 
 </head>
 <body>
@@ -25,11 +95,14 @@
     </header>
     <div class="intro">
         <div class="bio" id="bio-container">
-            <h1 style="line-height: 1em;">Hello! <wave style="font-size: 6vw;">👋🏻</wave></h1>
+            <h1 style="line-height: 1em;">Hello! <wave>👋🏻</wave></h1>
             <h2>I'm Mitchell Zhou.</h2>
             <p>Welcome to my person page! I am currently a senior at NYU majoring in <b>Computer Science</b> and minoring in <red>Cybersecurity</red>. My career aspiration is to work for one of the <b>intelligence agencies.</b> I am passionate about all things cyber with keen interest in <blue>Cybercrime.</blue></p>
             <p>Most of my work thus far has revolved around websites, from web development to web application security.</p>
             <p>This page is interactive! You can hover over the text, click on the links, play the videos, and engage with the site. Let's explore the website together as I show you all the cool <span class="black">CTF challenges</span>, <span class="black">security ventures</span>, and <span class="black">research projects</span> I've been working on!</p>
+            <div class="arrow-container">
+                <img class="arrow" src="/images/arrow.png">
+            </div>
         </div>
         <div class="profile"></div>
     </div>
@@ -56,14 +129,14 @@
         <!-- First slideshow container -->
         <div class="w3-content w3-display-container" style="margin-top: 20px; margin-left: 0px;">
             <div class="w3-display-container mySlides" style="height: 100%;">
-                <img src="images/results.png" style="width:100%; height: 100%;">
+                <img src="/images/results.png" style="width:100%; height: 100%;">
                 <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
                     The result
                 </div>
             </div>
 
             <div class="w3-display-container mySlides" style="height: 100%;">
-                <img src="images/emailSpoof.jpg" style="width:100%; height: 100%;">
+                <img src="/images/emailSpoof.jpg" style="width:100%; height: 100%;">
                 <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
                     Automated it with a script
                 </div>
@@ -74,7 +147,7 @@
         </div>
     </div>
 
-    <div class="info" style="padding-left: 80px;padding-right: 80px;">
+    <div class="info">
         <h3 style="margin-bottom: 65px;">NYU OSIRIS Cyber Security Lab</h3>
         <desc>
             I am a proud member of the <a href="https://osiris.cyber.nyu.edu/" class="custom-link" style="color: #702963">NYU Osiris Cyber Security Lab</a>.
@@ -83,35 +156,9 @@
             <a href="https://www.csaw.io/" class="custom-link" style="color: #702963"> NYU CSAW</a>, the largest student run cybersecurity conference in the world!
         </desc>
         <br>
-        <img src="images/logo.png" style="width: 53%; margin-left: 10vw; margin-top: 2.1%">
+        <img src="/images/logo.png" style="width: 100%; margin-top: 2.1%">
     </div>
     </div>
-
-<!--&lt;!&ndash;        NEED TO FIX IMAGE   &ndash;&gt;-->
-<!--    <div class="section" style="margin-bottom: 0px; margin-top: 100px;">-->
-<!--    <div class="info-container">-->
-<!--        <div class="info">-->
-<!--            <h3>MTA Subway Prices CTF</h3>-->
-<!--            <desc>-->
-<!--                This is the first <a href="https://github.com/Mitchellzhou1/MTA-Prices" class="custom-link" style="color: #702963">CTF challenge I wrote</a>. It is a blind SQL injection challenge where you must login as the MTA Admin and-->
-<!--                <b style="color: #702963">change the subway prices from $2.90 back down to $2.75.</b>-->
-<!--                This challenge was in the official 2023 CSAW CTF Qualification Round.-->
-<!--            </desc>-->
-<!--&lt;!&ndash;            <img src="images/Textron.jpeg">&ndash;&gt;-->
-<!--            <img src="https://engineering.nyu.edu/sites/default/files/styles/cinema_large_default_1x/public/2019-09/ctf-csaw-2018.jpeg?h=8655deb7&itok=1BAp9ueh">-->
-<!--        </div>-->
-
-<!--        <div class="info" style="padding-right: 80px;padding-left: 80px;">-->
-<!--            <h3>Textron Cybersecurity Intern</h3>-->
-<!--            <desc>-->
-<!--                I was a cybersecurity intern at <a href="https://www.textronsystems.com/" class="custom-linkblue" style="color: #00739c;">Textron Systems</a>, a defense contractor.-->
-<!--                This was a big milestone in my career as I was able to achieve a security clearance and work on-->
-<!--                projects relating to <blue>national security.</blue>-->
-<!--            </desc>-->
-<!--            <img style="margin-left: 3.6vw; margin-top: 20px" src="images/Textron.jpeg">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 
     <script>
@@ -147,6 +194,13 @@ function showDivs(n, slideshow) {
     if (slideshow === 2) x[slideIndex2 - 1].style.display = "block";
 }
 </script>`
+<script>
+    window.addEventListener('resize', function() {
+        if (window.innerWidth < 550) {
+            window.resizeTo(550, window.innerHeight);
+        }
+    });
+</script>
 
 </body>
 </html>
