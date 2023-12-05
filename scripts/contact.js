@@ -3,28 +3,28 @@ const contactsData = {
       {
         "socialMedia": "linkedin",
         "link": "https://www.linkedin.com/in/mitchell-zhou/",
-        "imageSrc": "/images/linkedin.png",
+        "imageSrc": "images/linkedin.png",
         "altText": "LinkedIn",
         "text": "Mitchell Zhou"
       },
       {
         "socialMedia": "facebook",
         "link": "https://www.facebook.com/mitchell.zhou/",
-        "imageSrc": "/images/facebook.png",
+        "imageSrc": "images/facebook.png",
         "altText": "Facebook",
         "text": "Mitchell Zhou"
       },
       {
         "socialMedia": "gmail",
         "link": "mailto:mitche.zhou1@gmail.com?subject=Hello&body=I%20hope%20you%20are%20doing%20well!",
-        "imageSrc": "/images/gmail.jpg",
+        "imageSrc": "images/gmail.jpg",
         "altText": "Gmail",
         "text": "mitche.zhou1[at]gmail.com"
       },
       {
         "socialMedia": "github",
         "link": "https://github.com/Mitchellzhou1",
-        "imageSrc": "/images/github.png",
+        "imageSrc": "images/github.png",
         "altText": "GitHub",
         "text": "Mitchellzhou1"
       }
