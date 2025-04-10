@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Webpage with Multiple Elements</title>
+    <title>Simplified Webpage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            max-width: 1000px;
+            max-width: 800px;
             margin: auto;
         }
         header {
@@ -18,17 +18,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 5px;
-        }
-        nav {
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        nav a:hover {
-            color: #007bff;
+            text-align: center;
         }
         section {
             margin-bottom: 30px;
@@ -47,216 +37,113 @@
         label {
             display: block;
             margin-bottom: 5px;
+            font-weight: bold;
         }
         input[type="text"],
         input[type="password"],
-        input[type="email"],
-        select,
-        textarea {
+        select {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: 16px;
         }
         button {
             background-color: #007bff;
             color: white;
-            padding: 10px 15px;
+            padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             margin-right: 10px;
+            font-size: 16px;
         }
         button:hover {
             background-color: #0056b3;
         }
-        .login-form {
-            max-width: 400px;
-            margin: auto;
+        .links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
             margin-top: 30px;
             padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 5px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Basic Webpage</h1>
+        <h1>My Simplified Webpage</h1>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="dropdowns">
-        <h2>Dropdown Menus</h2>
-        
+    <!-- Dropdown Section -->
+    <section id="dropdown">
+        <h2>Dropdown Menu</h2>
         <div class="form-group">
-            <label for="simple-dropdown">Simple Dropdown:</label>
-            <select id="simple-dropdown">
+            <label for="main-menu" aria-describedby="searchDropdownDescription">Main Menu</label>
+            <select id="main-menu" class="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="main menu">
                 <option value="">Select an option</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="multi-dropdown">Multiple Selection Dropdown:</label>
-            <select id="multi-dropdown" multiple>
-                <option value="item1">Item 1</option>
-                <option value="item2">Item 2</option>
-                <option value="item3">Item 3</option>
-                <option value="item4">Item 4</option>
+                <option value="home">Home</option>
+                <option value="products">Products</option>
+                <option value="services">Services</option>
+                <option value="contact">Contact</option>
             </select>
         </div>
     </section>
 
+    <!-- Buttons Section -->
     <section id="buttons">
         <h2>Buttons</h2>
-        
         <button type="button">Primary Button</button>
-        <button type="button" style="background-color: #6c757d;">Secondary Button</button>
         <button type="button" style="background-color: #28a745;">Success Button</button>
-        <button type="button" style="background-color: #dc3545;">Danger Button</button>
-        <button type="button" style="background-color: #ffc107; color: #212529;">Warning Button</button>
-        
-        <div style="margin-top: 15px;">
-            <button type="button" style="padding: 5px 10px; font-size: 12px;">Small Button</button>
-            <button type="button">Regular Button</button>
-            <button type="button" style="padding: 15px 30px; font-size: 18px;">Large Button</button>
+    </section>
+
+    <!-- Input Section -->
+    <section id="input">
+        <h2>Input Field</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
         </div>
     </section>
 
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login Form</h2>
+        <div class="form-group">
+            <label for="login-email">Email:</label>
+            <input type="text" id="login-email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" placeholder="Enter your password">
+        </div>
+        <button type="submit">Login</button>
+    </section>
+
+    <!-- Links Section -->
     <section id="links">
         <h2>Links</h2>
-        
-        <p>Here are some example links:</p>
-        <ul>
-            <li><a href="https://www.google.com" target="_blank">External Link (Google)</a></li>
-            <li><a href="#dropdowns">Internal Link to Dropdowns Section</a></li>
-            <li><a href="mailto:example@example.com">Email Link</a></li>
-            <li><a href="tel:+1234567890">Phone Link</a></li>
-            <li><a href="#" onclick="alert('Link with JavaScript action!')">Link with JavaScript Action</a></li>
-        </ul>
-    </section>
-
-    <section id="login" class="login-form">
-        <h2>Login Form</h2>
-        
-        <form action="/login" method="post">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            
-            <div class="form-group">
-                <button type="submit">Login</button>
-                <button type="reset">Reset</button>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" name="remember"> Remember me
-                </label>
-            </div>
-            
-            <p>Don't have an account? <a href="#register">Register here</a></p>
-        </form>
-    </section>
-
-    <section id="forms">
-        <h2>Input Forms</h2>
-        
-        <form>
-            <div class="form-group">
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-            </div>
-            
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-            </div>
-            
-            <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob">
-            </div>
-            
-            <div class="form-group">
-                <label>Gender:</label>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-                <label><input type="radio" name="gender" value="other"> Other</label>
-            </div>
-            
-            <div class="form-group">
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="">Select your country</option>
-                    <option value="us">United States</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="ca">Canada</option>
-                    <option value="au">Australia</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="interests">Interests (select multiple):</label>
-                <select id="interests" name="interests" multiple>
-                    <option value="sports">Sports</option>
-                    <option value="music">Music</option>
-                    <option value="reading">Reading</option>
-                    <option value="travel">Travel</option>
-                    <option value="cooking">Cooking</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Enter your message here"></textarea>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" name="terms"> I agree to the terms and conditions
-                </label>
-            </div>
-            
-            <div class="form-group">
-                <button type="submit">Submit Form</button>
-                <button type="reset">Clear Form</button>
-            </div>
-        </form>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 My Basic Webpage. All rights reserved.</p>
-        <p>
-            <a href="#privacy">Privacy Policy</a> | 
-            <a href="#terms">Terms of Service</a> | 
-            <a href="#contact">Contact Us</a>
-        </p>
+        <p>&copy; 2023 My Simplified Webpage. All rights reserved.</p>
     </footer>
 </body>
 </html>
